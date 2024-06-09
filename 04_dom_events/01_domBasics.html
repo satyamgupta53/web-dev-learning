@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Manipulation</title>
+</head>
+
+<body class="bg-black" style="background-color: #212121; padding: auto;">
+    <div class="parent" style="color: antiquewhite;">
+        <!-- this is a commment -->
+        <div class="days">Monday</div>
+        <div class="days">Tuesday</div>
+        <div class="days">Wednesday</div>
+        <div class="days">Thursday</div>       
+    </div>
+</body>
+ 
+<script>
+    const parent = document.querySelector('.parent')
+    const monday = document.querySelector('.days')
+    // for (let index = 0; index < parent.children.length; index++) console.log(parent.children[index].innerHTML);
+
+    // console.log(parent)
+    // console.log(parent.firstElementChild) // Monday
+    // console.log(parent.lastElementChild) // Thursday  
+
+    // console.log(monday.parentElement) // parent
+    // console.log(monday.nextElementSibling) // Tuesday
+
+    console.log("Nodes : ", parent.childNodes)
+</script>
+</html>
