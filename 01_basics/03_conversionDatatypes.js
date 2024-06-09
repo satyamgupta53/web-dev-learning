@@ -52,3 +52,23 @@ console.log(1 + 2 + "2"); // 32 Number then string
 const symbol1 = Symbol('1234')
 const symbol2 = Symbol('1234')
 console.log(symbol1 === symbol2); // false
+
+const arrays = ["shaktiman", "123", true, 123]
+console.log(arrays[3]); // shaktiman
+
+const obj = {
+    name: "Shaktiman",
+    age: 123,
+    isSuperHero: true,
+    address: {
+        city: "Delhi",
+        state: "Delhi"
+    }
+}
+console.log(obj.address.city); // Delhi
+
+const myFunc = function() {
+    console.log("hello world !");
+}
+
+myFunc() // hello world !
