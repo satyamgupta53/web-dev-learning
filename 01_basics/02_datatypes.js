@@ -15,10 +15,10 @@ objects
 */
 
 let age = 18
-let name = "Satyam"
+let name_full = "Satyam"
 let isLoggedIn = false
 let state = null
 let email
 
-console.table([age, name, isLoggedIn, state, email])
+console.table([age, name_full, isLoggedIn, state, email])
 console.log(typeof null) // null is an object
