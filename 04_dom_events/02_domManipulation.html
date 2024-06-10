@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    const div = document.createElement('div');
+    div.className = 'parent';
+    div.id = Math.round(Math.random() * 10 + 1);
+    div.setAttribute('title', 'generated a title');
+
+    // div.innerHTML = '<strong>Hi there</strong>'; not a good approach as it over rides the selected nodes
+    const addText = document.createTextNode('Hi there');
+    div.appendChild(addText);
+
+    div.style.backgroundColor = 'red';
+    div.style.padding = '10px';
+    
+    document.body.appendChild(div);
+</script>
+</html>
